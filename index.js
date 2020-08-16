@@ -1,8 +1,10 @@
 // Code your solution here
 function findMatching(array,str){
+  const newArr=[];
     array.filter(function(item){
-        if(item.finishedLessons>100){
-            console.log(item.name);
+        if(item===str){
+          newArr.push(item);
         }
+        return newArr;
     })
     }
