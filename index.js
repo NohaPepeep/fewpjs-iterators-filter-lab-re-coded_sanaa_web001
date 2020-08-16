@@ -26,7 +26,7 @@ function findMatching(array,str){
   function matchName(array,str){
   const newArr=[];
     array.filter(function(item){
-        if(item.toLowerCase()===str.toLowerCase()){
+        if(item.name.toLowerCase()===str.toLowerCase()){
           newArr.push(item);
         }
     })
