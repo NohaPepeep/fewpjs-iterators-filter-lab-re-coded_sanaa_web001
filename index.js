@@ -2,7 +2,7 @@
 function findMatching(array,str){
   const newArr=[];
     array.filter(function(item){
-        if(item===str){
+        if(item.toLowerCase()===str.toLowerCase()){
           newArr.push(item);
         }
     })
