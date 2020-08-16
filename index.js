@@ -8,7 +8,7 @@ function findMatching(array,str){
     })
     return newArr;
     }
-    function fuzzyMatch(array,str){
+  function fuzzyMatch(array,str){
   const newArr=[];
     array.filter(function(item){
       let col=0;
