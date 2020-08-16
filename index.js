@@ -11,7 +11,13 @@ function findMatching(array,str){
     function fuzzyMatch(array,str){
   const newArr=[];
     array.filter(function(item){
-        if(item.toLowerCase()===str.toLowerCase()){
+      let col=0;
+        for(let i=0;i<=str.length;i++){
+          if(item[i]===str[i]){
+            col+=1;
+          }
+        }
+        if(col===str.length){
           newArr.push(item);
         }
     })
