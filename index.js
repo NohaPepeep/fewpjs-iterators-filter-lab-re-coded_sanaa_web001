@@ -5,6 +5,6 @@ function findMatching(array,str){
         if(item===str){
           newArr.push(item);
         }
-        return newArr;
     })
+    return newArr;
     }
